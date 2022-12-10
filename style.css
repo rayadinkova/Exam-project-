@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Poppins:ital,wght@1,200&family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(kopito.jpg);
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+
+.logo{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.navigation-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    column-gap: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navigation .search-icon{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
