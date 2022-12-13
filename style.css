@@ -97,7 +97,7 @@ a{
    background-image: url(bcg.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
-     height: 100vh; 
+    height: 100vh; 
 }
 
 #section h1{
@@ -108,4 +108,20 @@ a{
     font-size: 50px;
 }
 
+.container{
+    width: 33.33%;
+    color: #f1f1f1;
+    
+    align-items: center;
 
+}
+
+
+.explore{
+    color: #fffcfc;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color:white;
+    background-color: rgb(160, 241, 255);
+   
+}
