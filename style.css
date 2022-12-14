@@ -104,7 +104,7 @@ section{
 .home .media-icons{
     z-index: 888;
     position: absolute;
-    right: 30px;
+    left: 30px;
     display: flex;
     flex-direction: column;
     transition: 0.5s ease;
@@ -122,33 +122,7 @@ section{
     transform: scale(1.3);
 }
 
-
 /*Your best adventure*/
-.section-adventure h1{
-    color: aliceblue;
-    font-style: bold;
-    display: flex;
-    margin-left: 40%;
-    font-size: 30px;
-}
-
-.container{
-    width: 33.33%;
-    color: #f1f1f1;
-    
-    align-items: center;
-
-}
-
-
-.explore{
-    color: #fffcfc;
-    border-radius: 5px;
-    cursor: pointer;
-    border-color:white;
-    background-color: rgb(160, 241, 255);
-   
-}
 
 .adventure{
     background-image: url(bcg.jpg);
@@ -157,42 +131,105 @@ section{
     background-size: cover; 
 }
 
+.adventure .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
+
+.adventure .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/*.adventure .box-container .box:hover{
+    background: rgb(227, 219, 208);
+}*/
+
+.adventure .box-container .box img{
+    height: 8rem;
+}
+
+.adventure .heading-title{
+    color: white;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.adventure .btn{
+    color: white;
+    border-radius: 5px;
+    border: solid white;
+    cursor: pointer;
+    border-color:white;
+    background-color: rgb(86, 228, 253);
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   width: 90px;
+   height: 25px;
+   text-align: center;
+   position: center;
+   margin-left: 140%;
+}
+
 
 /* Subpages section */
 /* Street Art Sofia */
 
 .streetart{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
     background-image: url(bcg.jpg);
     background-repeat: no-repeat;
     height: 100vh;  
     background-size: cover;
 }
 
-.section-streetart h1{
-    color: aliceblue;
-    font-style: bold;
-    display: flex;
-    margin-left: 40%;
-    font-size: 30px;
-    text-align: left;
+.streetart .image{
+    flex:1 1 41rem;
 }
 
-.section-streetart p{
-    color: aliceblue;
-    font-style: bold;
-    display: flex;
-    margin-left: 40%;
-    font-size: 10px;
+.streetart .image img{
+    width: 80%;
 }
 
-.readmore{
+.streetart .content{
+    flex:1 1 41rem;
+    padding: 3rem;
+    position: absolute;
+    padding-left: 33%;
+    
+}
+
+.streetart .content h3{
+    color: white;
+}
+
+.streetart .content p{
+    color: white;
+}
+
+.streetart .content .btn{
     color: #fffcfc;
     border-radius: 5px;
     cursor: pointer;
-    border-color:white;
-    background-color: rgb(160, 241, 255);
-   
+    border: solid white;
+    background-color: rgb(86, 228, 253);
+    text-decoration: none; 
+    width: 90px; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 25px;
 }
+
+
 
 /* Street Waffles Sofia */
 .streetfood{
@@ -202,7 +239,47 @@ section{
     background-size: cover;
 }
 
-.section-streetfood h1{
+.streetfood .image{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    
+}
+
+.streetfood .content{
+    flex:1 1 41rem;
+    padding: 3rem;
+    position: absolute;
+    padding-left: 33%;
+    text-align: right;
+    
+}
+
+.streetfood .content h3{
+    color: white;
+}
+
+.streetfood .content p{
+    color: white;
+}
+
+
+.streetfood .content .btn{
+    color: #fffcfc;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid white;
+    background-color: rgb(86, 228, 253);
+    text-decoration: none; 
+    width: 90px; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 25px;
+}
+
+/*.section-streetfood h1{
     color: aliceblue;
     font-style: bold;
     display: flex;
@@ -225,7 +302,7 @@ section{
     border-color:white;
     background-color: rgb(160, 241, 255);
    
-}
+}*/
 
 
 /* The Red flat */
@@ -362,8 +439,85 @@ section{
 /* footer */
 
 .footer{
+    border-top: .1rem solid white;
     background-image: url(bcg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer .box-container .box h3{
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .links{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer .box-container .links a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .box .contact-icons a i{
+    color: white;
+    padding-right: .5rem;
+    font-size: 20px;
+}
+
+.divider img{
+   margin-right: 190px;
+}
+
+.footer .copyright{
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: white;
+}
+
+
+/*media queries*/
+
+@media (max-width: 1200px){
+
+    section{
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading-title{
+        font-size: 3.5rem;
+    }
+
 }
