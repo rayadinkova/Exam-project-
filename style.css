@@ -7,6 +7,7 @@
 }
 
 
+
 /*Header*/
 
 header{
@@ -79,7 +80,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url(kopito.jpg);
+    background-image: url(images/kopito_gradient.png);
     background-repeat: no-repeat;
     height: 100vh;  
     background-size: cover;   
@@ -125,7 +126,7 @@ section{
 /*Your best adventure*/
 
 .adventure{
-    background-image: url(bcg.jpg);
+    background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     height: 100vh;  
     background-size: cover; 
@@ -180,23 +181,40 @@ section{
 /* Subpages section */
 /* Street Art Sofia */
 
+
 .streetart{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     
-    background-image: url(bcg.jpg);
+    background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     height: 100vh;  
     background-size: cover;
 }
 
+.streetart .bcg_img{
+    display: flex;
+    margin-left: 70%;
+}
+
+.streetart .bcg_img img{
+    width: 250%;
+   
+}
+
+
 .streetart .image{
     flex:1 1 41rem;
+    position: absolute;
+    display: flex;
+   
+   
 }
 
 .streetart .image img{
-    width: 80%;
+    width: 110%;
+    
 }
 
 .streetart .content{
@@ -209,6 +227,7 @@ section{
 
 .streetart .content h3{
     color: white;
+    
 }
 
 .streetart .content p{
@@ -227,31 +246,45 @@ section{
     justify-content: center;
     text-align: center;
     height: 25px;
+ 
+}
+
+
+/*image between sections*/
+.bcg_img{
+    background-image: url(images/ndc.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover;
 }
 
 
 
 /* Street Waffles Sofia */
 .streetfood{
-    background-image: url(bcg.jpg);
+    background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     height: 100vh;  
     background-size: cover;
 }
 
+
 .streetfood .image{
     width: 80%;
     display: flex;
-    justify-content: flex-end;
-    float: right;
+    margin-left: 25%;
+    position: absolute;
     
 }
+
+
 
 .streetfood .content{
     flex:1 1 41rem;
     padding: 3rem;
     position: absolute;
-    padding-left: 33%;
+    padding-left: 28%;
     text-align: right;
     
 }
@@ -279,153 +312,209 @@ section{
     height: 25px;
 }
 
-/*.section-streetfood h1{
-    color: aliceblue;
-    font-style: bold;
-    display: flex;
-    margin-left: 40%;
-    font-size: 30px;
-}
-
-.section-streetfood p{
-    color: aliceblue;
-    font-style: bold;
-    display: flex;
-    margin-left: 40%;
-    font-size: 10px;
-}
-
-.readmore{
-    color: #fffcfc;
-    border-radius: 5px;
-    cursor: pointer;
-    border-color:white;
-    background-color: rgb(160, 241, 255);
-   
-}*/
 
 
 /* The Red flat */
 
 .redflat{
-    background-image: url(bcg.jpg);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     height: 100vh;  
     background-size: cover;
 }
 
-.section-redflat h1{
-    color: aliceblue;
-    font-style: bold;
-    display: flex;
-    margin-left: 40%;
-    font-size: 30px;
+.redflat .image{
+    flex:1 1 41rem;
 }
 
-.section-redflat p{
-    color: aliceblue;
-    font-style: bold;
-    display: flex;
-    margin-left: 40%;
-    font-size: 10px;
+.redflat .image img{
+    width: 80%;
 }
 
-.readmore{
+.redflat .content{
+    flex:1 1 41rem;
+    padding: 3rem;
+    position: absolute;
+    padding-left: 25%;
+    
+}
+
+.redflat .content h3{
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.redflat .content p{
+    color: white;
+}
+
+.redflat .content .btn{
     color: #fffcfc;
     border-radius: 5px;
     cursor: pointer;
-    border-color:white;
-    background-color: rgb(160, 241, 255);
-   
+    border: solid white;
+    background-color: rgb(86, 228, 253);
+    text-decoration: none; 
+    width: 90px; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 25px;
+    
 }
+
 
 
 /* People and culture in Sofia */
 
 .culture{
-    background-image: url(bcg.jpg);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     height: 100vh;  
     background-size: cover;
 }
 
-.section-culture h1{
-    color: aliceblue;
-    font-style: bold;
-    display: flex;
-    margin-left: 40%;
-    font-size: 30px;
-    justify-content: flex-start;
+.culture .image{
+    flex:1 1 41rem;
+    margin-left: 70%;
 }
 
-.section-culture p{
-    color: aliceblue;
-    font-style: bold;
+.culture .image img{
+    width: 130%;
     display: flex;
-    margin-left: 40%;
-    font-size: 10px;
-    
-}
-
-.readmore{
-    color: #fffcfc;
-    border-radius: 5px;
-    cursor: pointer;
-    border-color:white;
-    background-color: rgb(160, 241, 255);
-   
-}
-
-.section-culture q{
-    color: #f1f1f1;
-    display: flex;
-    font-size: 10px;
     float: right;
 }
 
+.culture .image2{
+    display: flex;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 4%;
+}
+
+.culture .image2 img{
+    width: 30%;
+}
+
+.culture .content{
+    flex:1 1 41rem;
+    padding: 3rem;
+    position: absolute;
+    padding-left: 33%;
+    
+}
+
+.culture .content h3{
+    color: white;
+    
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -150%;
+}
+
+.culture .content p{
+    color: white;
+    margin-left: -150%;
+}
+
+.culture .quote{
+    display: flex;
+    position: absolute;
+    color: white;
+    margin-left: 60%;
+   
+}
+
+.content q{
+    color: white;
+}
+
+.culture .content .btn{
+    color: #fffcfc;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid white;
+    background-color: rgb(86, 228, 253);
+    text-decoration: none; 
+    width: 90px; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 25px;
+    margin-left: -150%;
+    margin-top: 80%;
+}
+
+
+
+
+
 /* What can we offer */
 .offer{
-    background-image: url(bcg.jpg);
+    background-image: url(images/Alexander_Nevsky.png);
     background-repeat: no-repeat;
     height: 100vh;  
     background-size: cover;
 }
 
-.section-offer h1{
+.content .title{
     color: aliceblue;
     font-style: bold;
     display: flex;
-    margin-left: 40%;
+    margin-left: 15%;
     font-size: 30px;
+    position: absolute;
+    margin-top: -6%;
 }
 
-.places{
+.content .benefits{
     color: aliceblue;
-    font-style: bold;
-    display: flex;
-    margin-left: 40%;
-    font-size: 20px;
-    justify-content: flex-start;
+    margin-top: 10%;
+    
 }
 
-.locations{
-    color: aliceblue;
-    font-style: bold;
+.benefits .places h3{
     display: flex;
-    margin-left: 40%;
-    font-size: 20px;
-    justify-content: flex-start;
+    margin-left: 50%;
+   
 }
 
-.food{
-    color: aliceblue;
-    font-style: bold;
-    display: flex;
-    margin-left: 40%;
-    font-size: 20px;
-    justify-content: flex-start;
+.benefits .places p{
+    margin-left: 50%;
+    margin-top: 1%;
 }
 
+.benefits .locations{
+    display: flex;
+}
+
+.benefits .locations h3{
+    margin-top: 11%;
+}
+
+.benefits .locations p{
+    margin-left: -41%;
+    margin-top: 19%;
+}
+
+.benefits .food h3{
+    display: flex;
+    margin-top: 12%;
+}
+
+.benefits .food p{
+    margin-left: -41%;
+    margin-top: 19%;
+}
 .section-offer p{
     color: aliceblue;
     font-style: bold;
@@ -435,15 +524,37 @@ section{
     
 }
 
+.locations{
+    color: aliceblue;
+    font-style: bold;
+    display: flex;
+    margin-left: 50%;
+    font-size: 18px;
+    
+}
+
+.food{
+    color: aliceblue;
+    font-style: bold;
+    display: flex;
+    margin-left: 50%;
+    font-size: 18px;
+    
+}
+
+
+
 
 /* footer */
 
 .footer{
     border-top: .1rem solid white;
-    background-image: url(bcg.jpg);
+    background-image: url(images/bcg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    
 
 }
 

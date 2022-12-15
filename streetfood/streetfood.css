@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Poppins:ital,wght@1,200&family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Header*/
+
+header{ 
+
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    transition: 0.5s ease;
+    
+}
+
+header .logo{
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+header .nav{
+    position: relative;
+}
+
+header .nav .nav-items a{
+    position: relative;
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .nav .nav-items a:before{
+    content: '';
+    position: absolute;
+    background: aliceblue;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .nav .nav-items a:hover:before{
+    width: 100%;
+}
+
+.search-icon{
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover;  
+}
+
+.home .breadcrumbs{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    margin-left: 20px;
+    margin-top: -20%;
+    position: absolute;
+}
+
+.home h1{
+    color: white;
+    margin-top: 10%;
+    margin-left: 40%;
+    gap: 10px;
+    font-size: 2rem;
+}
+
+.home span{
+    color: red;
+}
+
+/* What is the Red Flat section */
+
+.redflat{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover; 
+}
+
+.redflat .content{
+   margin-left: 40%;
+    
+}
+
+.redflat .content h3{
+    color: white;
+}
+
+.redflat .content p{
+    color: white;
+}
+
+.redflat .image{
+    margin-left: 10%;
+    display: flex;
+    position: absolute;
+}
+
+.redflat .image img{
+    width: 250px;
+}
+
+.redflat .image2{
+    display: flex;
+    position: absolute;
+
+}
+
+.redflat .image2 img{
+    width: 25%;
+   margin-top: 40%;
+   
+}
+
+/*Gallery section*/
+
+.gallery{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover;
+}
+
+.gallery .content h3{
+    color: white;
+    gap: 10px;
+    
+   
+}
+
+
+.gallery .content span{
+    color: red;
+}
+
+
+/* footer */
+
+.footer{
+    border-top: .1rem solid white;
+    background-image: url(images/bcg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer .box-container .box h3{
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .links{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer .box-container .links a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .box .contact-icons a i{
+    color: white;
+    padding-right: .5rem;
+    font-size: 20px;
+}
+
+.divider img{
+   margin-right: 190px;
+}
+
+.footer .copyright{
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: white;
+}
+
