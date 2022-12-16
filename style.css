@@ -6,7 +6,9 @@
     box-sizing: border-box;
 }
 
-
+:root{
+    --dark-green: rgb(71, 113, 113);
+}
 
 /*Header*/
 
@@ -94,11 +96,19 @@ section{
 }
 
 .home .content h1{
-    font-size: 4em;
+    font-size: 7em;
     font-weight: 900;
     letter-spacing: 3px;
     line-height: 75px;
     margin-bottom: 40px;
+    margin-top: 3%;
+
+}
+
+.home .content h2{
+    font-size: 2em;
+    margin-top: -10%;
+    margin-left: 1%;
 }
 
 /* social media icons effect*/
@@ -106,17 +116,20 @@ section{
     z-index: 888;
     position: absolute;
     left: 30px;
-    display: flex;
+    margin-top: -12%;
     flex-direction: column;
     transition: 0.5s ease;
+   
     
 }
 
 .home .media-icons a{
     color: aliceblue;
     font-size: 1.6em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     transition: 0.3s ease;
+    display: flex;
+   
 }
 
 .home .media-icons a:hover{
@@ -165,7 +178,7 @@ section{
 
 .adventure .btn{
     color: white;
-    border-radius: 5px;
+    border-radius: 20px;
     border: solid white;
     cursor: pointer;
     border-color:white;
@@ -173,11 +186,13 @@ section{
    text-decoration: none;
    display: flex;
    justify-content: center;
-   width: 90px;
+   width: 100px;
    height: 25px;
-   text-align: center;
-   position: center;
    margin-left: 40%;
+}
+
+.adventure .btn:hover{
+    background-color: var(--dark-green);
 }
 
 
@@ -211,12 +226,13 @@ section{
     flex:1 1 41rem;
     position: absolute;
     display: flex;
+    margin-left: -6%;
    
    
 }
 
 .streetart .image img{
-    width: 110%;
+    width: 800px;
     
 }
 
@@ -224,7 +240,8 @@ section{
     flex:1 1 41rem;
     padding: 3rem;
     position: absolute;
-    padding-left: 33%;
+    margin-left: 25%;
+    font-size: 18px;
     
 }
 
@@ -239,23 +256,27 @@ section{
 
 .streetart .content .btn{
     color: #fffcfc;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     border: solid white;
     background-color: rgb(86, 228, 253);
     text-decoration: none; 
-    width: 90px; 
+    width: 100px; 
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 25px;
+    height: 28px;
  
+}
+
+.streetart .content .btn:hover{
+    background-color: var(--dark-green);
 }
 
 
 /*image between sections*/
 .bcg_img{
-    background-image: url(images/ndc.png);
+    background-image: url(images/ndc_photoshop.png);
     width: 100%;
     background-repeat: no-repeat;
     height: 100vh;  
@@ -274,21 +295,34 @@ section{
 
 
 .streetfood .image{
-    width: 80%;
     display: flex;
-    margin-left: 25%;
+    margin-left: 20%;
     position: absolute;
     
 }
 
+.streetfood .image img{
+    width: 800px;
+}
 
+.streetfood .waffles_edit{
+    position: absolute;
+    
+   
+}
+
+.streetfood .waffles_edit img{
+    width: 40%;
+   
+}
 
 .streetfood .content{
     flex:1 1 41rem;
-    padding: 3rem;
+    margin-top: 7%;
     position: absolute;
     padding-left: 28%;
     text-align: right;
+    font-size: 18px;
     
 }
 
@@ -303,19 +337,22 @@ section{
 
 .streetfood .content .btn{
     color: #fffcfc;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     border: solid white;
     background-color: rgb(86, 228, 253);
     text-decoration: none; 
-    width: 90px; 
+    width: 100px; 
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 25px;
+    height: 28px;
+    margin-left: 60%;  
 }
 
-
+.streetfood .content .btn:hover{
+    background-color: var(--dark-green);
+}
 
 /* The Red flat */
 
@@ -332,17 +369,34 @@ section{
 
 .redflat .image{
     flex:1 1 41rem;
+    display: flex;
+    position: absolute;
+    margin-left: -5%;
+
 }
 
 .redflat .image img{
+    width: 850px;
+}
+
+.redflat .camera{
+    position: absolute;
+    margin-left: 45%;
+    
+   
+}
+
+.redflat .camera img{
     width: 80%;
+   
 }
 
 .redflat .content{
     flex:1 1 41rem;
     padding: 3rem;
     position: absolute;
-    padding-left: 25%;
+    padding-left: 28%;
+    font-size: 18px;
     
 }
 
@@ -358,17 +412,20 @@ section{
 
 .redflat .content .btn{
     color: #fffcfc;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     border: solid white;
     background-color: rgb(86, 228, 253);
     text-decoration: none; 
-    width: 90px; 
+    width: 100px; 
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 25px;
-    
+    height: 28px;   
+}
+
+.redflat .content .btn:hover{
+    background-color: var(--dark-green);
 }
 
 
@@ -389,23 +446,23 @@ section{
 .culture .image{
     flex:1 1 41rem;
     margin-left: 70%;
+    display: flex;  
+    
 }
 
 .culture .image img{
-    width: 130%;
-    display: flex;
-    float: right;
+    width: 150%;
 }
 
 .culture .image2{
     display: flex;
     position: absolute;
     margin-top: 6%;
-    margin-left: 4%;
+    margin-left: 50px;
 }
 
 .culture .image2 img{
-    width: 30%;
+    width: 35%;
 }
 
 .culture .content{
@@ -413,12 +470,13 @@ section{
     padding: 3rem;
     position: absolute;
     padding-left: 33%;
+    font-size: 18px;
     
 }
 
 .culture .content h3{
     color: white;
-    
+    font-size: 21px;
     display: flex;
     justify-content: flex-start;
     margin-left: -150%;
@@ -433,7 +491,8 @@ section{
     display: flex;
     position: absolute;
     color: white;
-    margin-left: 60%;
+    margin-left: 70%;
+    font-style: italic;
    
 }
 
@@ -443,18 +502,23 @@ section{
 
 .culture .content .btn{
     color: #fffcfc;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     border: solid white;
     background-color: rgb(86, 228, 253);
     text-decoration: none; 
-    width: 90px; 
+    width: 100px; 
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 25px;
+    height: 28px;
     margin-left: -150%;
     margin-top: 80%;
+}
+
+.culture .content .btn:hover{
+    background-color: var(--dark-green);
+
 }
 
 
@@ -505,7 +569,7 @@ section{
 }
 
 .benefits .locations p{
-    margin-left: -41%;
+    margin-left: -35%;
     margin-top: 19%;
 }
 
@@ -515,7 +579,7 @@ section{
 }
 
 .benefits .food p{
-    margin-left: -41%;
+    margin-left: -35%;
     margin-top: 19%;
 }
 .section-offer p{
@@ -589,8 +653,12 @@ section{
 .footer .box .contact-icons a i{
     color: white;
     padding-right: .5rem;
-    font-size: 20px;
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
 }
+
+
 
 .divider img{
    margin-right: 190px;
