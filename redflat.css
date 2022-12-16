@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Poppins:ital,wght@1,200&family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Header*/
+
+header{ 
+
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    transition: 0.5s ease;
+    
+}
+
+header .logo{
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+header .nav{
+    position: relative;
+}
+
+header .nav .nav-items a{
+    position: relative;
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .nav .nav-items a:before{
+    content: '';
+    position: absolute;
+    background: aliceblue;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .nav .nav-items a:hover:before{
+    width: 100%;
+}
+
+.search-icon{
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(imagesrf/theredflat.png);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover;  
+}
+
+
+.home .breadcrumbs{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    margin-left: 20px;
+    margin-top: -20%;
+    position: absolute;
+}
+
+.home h1{
+    color: white;
+    margin-top: 10%;
+    margin-left: 45%;
+    gap: 10px;
+    font-size: 2rem;
+}
+
+.home span{
+    color: red;
+}
+
+/* What is the Red Flat section */
+
+.redflat{
+    background-image: url(imagesrf/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover; 
+}
+
+.redflat .content{
+   margin-left: 55%;
+   text-align: right;
+   position: absolute;
+
+    
+}
+
+.redflat .content h3{
+    color: white;
+    
+}
+
+.redflat .content p{
+    color: white;
+    margin-top: 2%;
+}
+
+
+.redflat .paragraph{
+    color: white;
+    display: flex;
+    position: absolute;
+    float: left;
+    margin-top: 35%;
+    margin-left: 20%;
+}
+
+.redflat .image{
+    margin-left: 20%;
+    display: flex;
+    position: absolute;
+}
+
+.redflat .image img{
+    width: 250px;
+}
+
+.redflat .image2{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 10%;
+
+}
+
+.redflat .image2 img{
+    width: 50%;
+   margin-top: 40%;
+   
+}
+
+
+/*Gallery section*/
+
+.gallery{
+    background-image: url(imagesrf/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover;
+}
+
+.gallery .content h3{
+    color: white;
+    gap: 6px;
+    display: flex;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 17%;
+}
+
+
+.gallery .content span{
+    color: red;
+}
+
+.media-scroller{
+    --spacer: 1rem;
+    display: grid;
+    gap: var(--spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.media-element{
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer);
+    width: 100%;
+    padding: 10px;
+    margin-top: 100%;
+
+    
+}
+
+.media-element > img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--spacer, 1rem); 
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+/* general styling*/
+.container{
+    inline-size: min(100% - 4rem, 70rem);
+    margin-inline: auto;
+}
+
+.flow{
+    display: grid;
+    gap: var(--size-3);
+}
+
+/* Where to be found section */
+
+.location{
+    background-image: url(imagesrf/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover; 
+}
+
+.location .content{
+   margin-left: 20%;
+   position: absolute;
+   margin-top: 6%;
+   
+}
+
+.location .content h3{
+    color: white;
+}
+
+.location .content p{
+    color: white;
+    margin-top: 5%;
+}
+
+.location .url p{
+    color: white;
+    display: flex;
+    position: absolute;
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 32%;
+    margin-left: 70%;
+}
+
+.location .visit{
+    color: white;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 20%;
+    display: flex;
+    gap: 5px;
+    
+}
+
+.location .visit a{
+    color: white;
+    text-decoration: none;  
+}
+
+.location .visit a:hover{
+    color: aqua;
+}
+
+.location .image{
+    margin-left: 57%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 5%;
+}
+
+.location .image img{
+    width: 330px;
+}
+
+/* footer */
+
+.footer{
+    border-top: .1rem solid white;
+    background-image: url(images/Alexander_Nevsky.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .box-container .box h3{
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 25%;
+}
+
+.footer .box-container .links{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer .box-container .links a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .box .contact-icons a i{
+    color: white;
+    padding-right: .5rem;
+    font-size: 20px;
+}
+
+.divider img{
+   margin-right: 190px;
+   margin-top: 10%;
+}
+
+.footer .copyright{
+    text-align: center;
+
+    margin-top: 10%;
+    font-size: .8rem;
+    color: white;
+}

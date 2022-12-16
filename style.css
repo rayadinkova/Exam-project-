@@ -125,6 +125,7 @@ section{
 
 /*Your best adventure*/
 
+
 .adventure{
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
@@ -138,17 +139,19 @@ section{
     gap: 1.5rem;
 }
 
+
+
 .adventure .box-container .box{
     padding: 3rem 2rem;
     text-align: center;
 }
 
-/*.adventure .box-container .box:hover{
-    background: rgb(227, 219, 208);
-}*/
+
 
 .adventure .box-container .box img{
-    height: 8rem;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .adventure .heading-title{
@@ -174,7 +177,7 @@ section{
    height: 25px;
    text-align: center;
    position: center;
-   margin-left: 140%;
+   margin-left: 40%;
 }
 
 
@@ -549,10 +552,11 @@ section{
 
 .footer{
     border-top: .1rem solid white;
-    background-image: url(images/bcg.jpg);
+    background-image: url(images/Alexander_Nevskycopy.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+   
 
     
 
@@ -632,3 +636,6 @@ section{
     }
 
 }
+
+
+
