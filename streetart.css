@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.msg{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover;  
+}
+
+.msg .content{
+    color: white;
+    position: absolute;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 36%;
+    line-height: 3rem;
+}
+
+.msg .content a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.msg .content a:hover{
+    color: aqua;
+}
