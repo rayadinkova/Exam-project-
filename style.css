@@ -9,6 +9,15 @@
     --dark-green: rgb(71, 113, 113);
 }
 
+.scroll-tracker{
+    position: fixed;
+    inset: 0 0 auto; /*I used inset as a short-hand for top, bottom, left and right,
+    so 0 0 for margin left and margin right and auto for ignoring the border property*/
+    height: 0.5rem;
+    background-color: aqua;
+    transform-origin: right;
+}
+
 /*Header*/
 
 header{

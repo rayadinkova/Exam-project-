@@ -32,6 +32,10 @@ header .logo{
     text-decoration: none;
 }
 
+header .logo:hover{
+    color: rgb(147, 255, 255);
+}
+
 header .nav{
     position: relative;
 }
@@ -94,7 +98,7 @@ section{
     text-decoration: none;
     font-size: 13px;
     text-decoration: none;
-    margin-top: -6%;
+    margin-top: -13%;
     
 }
 .home .breadcrumbs .backtohome{
@@ -108,7 +112,7 @@ section{
 
 .home .breadcrumbs .uil{
     color: white;
-    margin-top: -6%;
+    margin-top: -13%;
 }
 
 
@@ -124,6 +128,274 @@ section{
     position: absolute;
     font-size: 3em;
     letter-spacing: 3px;
-    margin-top: 4%;
+    margin-top: -2%;
     margin-left: 24%;
+}
+
+/*Why visit Rila section*/
+
+.rila_monestary{
+    background-image: url(imagesrf/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover; 
+} 
+
+.rila_monestary .image{
+    display: flex;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: -6%;
+}
+
+.rila_monestary .image img{
+    width: 550px;
+}
+
+.rila_monestary .content{
+    text-align: right;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin-left: 45%;
+    margin-top: 10%;
+}
+
+/*How to visit Rila section*/
+
+.how_to{
+    background-image: url(imagesrf/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover; 
+
+}
+
+.how_to .why_visit_rila img{
+    display: flex;
+    margin-left: -15%;
+}
+
+.how_to .content p{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 6%;
+}
+
+/*Where to be found*/
+
+.location{
+    background-image: url(imagesrf/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover; 
+}
+
+.location .content{
+   margin-left: 45%;
+   position: absolute;
+   margin-top: 6%;
+   font-size: 20px;
+   text-align: right;
+}
+
+.location .content h3{
+    color: white;
+}
+
+.location .content p{
+    color: white;
+    margin-top: 5%;
+}
+
+.location .map{
+    display: flex;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 6%;
+}
+
+/*Reviews section*/
+
+.reviews{
+    background-image: url(imagesrf/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover; 
+}
+
+.reviews h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 34%;
+    font-size: 1.9rem;
+}
+ 
+
+/*Reviews, portrait 1*/
+
+.reviews .portrait1{
+    margin-left: -60%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.reviews .portrait1 .stars i{
+    font-size: 20px;
+    color: aqua;
+}
+
+.reviews .portrait1 p{
+    font-size: 15px;
+    color: white;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.reviews .portrait1 h3{
+    font-size: 20px;
+    color: white
+}
+
+.reviews .portrait1 img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+/*Reviews, portrait 2*/
+
+.reviews .portrait2{
+    margin-left: 5%;
+    margin-top: -32%;
+    padding: 2rem;
+    text-align: center;
+   
+    position: relative;
+}
+
+.reviews .portrait2 .stars i{
+    font-size: 20px;
+    color: aqua;
+}
+
+.reviews .portrait2 p{
+    font-size: 15px;
+    color: white;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.reviews .portrait2 h3{
+    font-size: 20px;
+    color: white
+}
+
+.reviews .portrait2 img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+/*Reviews, portrait 3*/
+
+.reviews .portrait3{
+    margin-left: 70%;
+    margin-top: -33%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.reviews .portrait3 .stars i{
+    font-size: 20px;
+    color: aqua;
+}
+
+.reviews .portrait3 p{
+    font-size: 15px;
+    color: white;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.reviews .portrait3 h3{
+    font-size: 20px;
+    color: white
+}
+
+.reviews .portrait3 img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+
+/* footer */
+
+.footer{
+    border-top: .1rem solid white;
+    background-image: url(images/Alexander_Nevskycopy.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+
+    
+
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer .box-container .box h3{
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .links{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer .box-container .links a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .box .contact-icons a i{
+    color: white;
+    padding-right: .5rem;
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+
+
+.divider img{
+   margin-right: 190px;
+}
+
+.footer .copyright{
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: white;
 }
