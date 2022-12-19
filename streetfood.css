@@ -201,3 +201,199 @@ section{
     background-size: cover; 
 
 }
+
+.gallery .content{
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 20%;
+    position: absolute;
+}
+
+.gallery .content h1{
+    color: rgb(255, 150, 44);
+    font-size: 25px;
+}
+
+.gallery .content p{
+    color: white;
+    margin-top: 6%;
+}
+
+.gallery .content p span{
+    color: aqua;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40%;
+    
+}
+
+.container img{
+    width: 200px;
+    
+}
+
+/*Inbetween section*/
+
+.inbetween{
+    background-image: url(imagesrf/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover; 
+}
+
+/* Where to be found section */
+
+.location{
+    background-image: url(imagesrf/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;  
+    background-size: cover; 
+}
+
+.location .content{
+   font-size: 20px;
+   margin-top: 8%;
+   margin-left: 10%;
+   
+}
+
+.location .content h3{
+    color: white;
+    margin-left: 5%;
+    position: absolute;
+    
+}
+
+.location .content p{
+    color: white;
+    margin-top: 3%;
+    margin-left: 5%;
+    position: absolute;
+}
+
+.location .promotion{
+    text-align: center;
+}
+
+.location .visit{
+    color: white;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 13%;
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.location .visit a{
+    color: white;
+    text-decoration: none;  
+}
+
+.location .visit a:hover{
+    color: aqua;
+}
+
+.location p{
+    color: white;
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 18%;
+}
+
+.location .social-media{
+    color: white;
+    position: absolute;
+    margin-left: 13%;
+    margin-top: 16%;
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.location .social-media a{
+    color: white;
+    text-decoration: none;  
+}
+
+.location .social-media a:hover{
+    color: aqua;
+}
+
+
+.location .map{
+    width: 320px;
+    display: flex;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -1%;
+
+}
+
+.location .url p{
+    color: white;
+    display: flex;
+    position: absolute;
+    font-style: italic;
+    font-size: 13px;
+   margin-top: 21%;
+    margin-left: 53%;
+}
+
+
+/* footer */
+
+.footer{
+    border-top: .1rem solid white;
+    background-image: url(images/Alexander_Nevsky.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .box-container .box h3{
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 25%;
+}
+
+.footer .box-container .links{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer .box-container .links a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .box .contact-icons a i{
+    color: white;
+    padding-right: .5rem;
+    font-size: 20px;
+}
+
+.divider img{
+   margin-right: 190px;
+   margin-top: 10%;
+}
+
+.footer .copyright{
+    text-align: center;
+
+    margin-top: 10%;
+    font-size: .8rem;
+    color: white;
+}

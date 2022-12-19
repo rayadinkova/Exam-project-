@@ -71,7 +71,7 @@ header .nav .nav-items a:hover:before{
 
 /*Carousel*/
 .carousel{
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     position: absolute;
     margin-left: -15%;
@@ -149,7 +149,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url(images/background.jpg);
+    background-image: url(images/darken2.jpg);
     background-repeat: no-repeat;
     height: 100vh;  
     background-size: cover;   
@@ -206,7 +206,6 @@ section{
 
 /*Your best adventure*/
 
-
 .adventure{
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
@@ -241,7 +240,23 @@ section{
     padding-top: 1rem;
     display: flex;
     justify-content: center;
+    margin-top: -1%;
+    margin-left: 28%;
+    position: absolute;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10%;
+}
+
+.container img{
+    width: 300px;
+    
+}
+
 
 
 .adventure .btn{
@@ -256,7 +271,8 @@ section{
    justify-content: center;
    width: 100px;
    height: 25px;
-   margin-left: 40%;
+   margin-left: 45%;
+   margin-top: 6%;
 }
 
 .adventure .btn:hover{
