@@ -788,6 +788,18 @@ section{
         font-size: 3.5rem;
     }
 
+    .home .content{
+        width: 30%
+    }
+
+    .home .content h2{
+        margin-left: 5%;
+    }
+
+    .adventure .container{
+        width: 5%;
+    }
+
 }
 
 

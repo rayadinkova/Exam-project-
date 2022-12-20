@@ -176,9 +176,9 @@ section{
     margin-left: -15%;
 }
 
-.how_to .content p{
+.how_to .content h1{
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     position: absolute;
     text-align: center;
